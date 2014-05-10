@@ -1,0 +1,14 @@
+((*- extends 'article.tplx' -*))
+
+((* block author *))
+\author{Christoph Lippert, F. Paolo Casale, Barbara Rakitsch, Oliver Stegle}
+((* endblock author *))
+
+((* block title *))
+\title{LIMIX: genetic analysis of multiple traits}
+((* endblock title *))
+
+((* block bibliography *))
+\bibliographystyle{unsrt}
+\bibliography{limix}
+((* endblock bibliography *))
