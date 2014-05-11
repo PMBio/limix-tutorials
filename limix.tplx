@@ -8,6 +8,10 @@
 \title{LIMIX: genetic analysis of multiple traits}
 ((* endblock title *))
 
+((* block abstract *))
+\tableofcontents
+((* endblock abstract *))
+
 ((* block bibliography *))
 \bibliographystyle{unsrt}
 \bibliography{limix}
