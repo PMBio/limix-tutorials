@@ -8,6 +8,6 @@ The actual source repository of LIMIX can be found here: https://github.com/PMBi
 ## Where to start
 You can start by taking a look at demo_yeast.ipynb.
 The most convenient way to access this notebook is via the ipython notebook viewer: 
-http://nbviewer.ipython.org/github/pmbio/limix-tutorials/blob/master/tutorial_yeast.ipynb or by downloading the PDF equivalent: 
-https://github.com/PMBio/limix-tutorials/blob/master/tutorial_yeast.pdf.
+http://nbviewer.ipython.org/github/pmbio/limix-tutorials/blob/master/tutorial_yeast.ipynb or by downloading the PDF equivalent: https://github.com/PMBio/limix-tutorials/blob/master/tutorial_yeast.pdf?raw=true.
+
 
