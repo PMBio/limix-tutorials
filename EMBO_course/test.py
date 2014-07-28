@@ -87,7 +87,7 @@ sample_relatedness  = sample_relatedness_unnormalized/     sample_relatedness_un
 # In[6]:
 
 X = SP.array(X,dtype='float')
-#y = SP.array(y,dtype='float')
+y = SP.array(y,dtype='float')
 #K = sample_relatedness
 K = SP.eye(snps.shape[0])
 covs = SP.ones([X.shape[0],1])
