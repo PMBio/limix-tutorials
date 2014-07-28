@@ -1,6 +1,7 @@
 import h5py 
 import scipy as sp
 import re
+import pdb
 
 
 if __name__ == '__main__':
@@ -14,12 +15,12 @@ if __name__ == '__main__':
 	chrom   = []
 	for marker in geno[1::,0]:
 		p = pattern.match(marker)
-		pos.append(p.group(1))
+		pos.append(p.group(3))
 		chrom.append(p.group(2))
 		_alleles = [p.group(4),p.group(5)]
 		alleles.append(_alleles)
 	pos = sp.array(pos,dtype='int')
-	chrom = sp.array(pos)
+	chrom = sp.array(chrom,dtype='int')
 	alleles = sp.array(alleles)
 
 
