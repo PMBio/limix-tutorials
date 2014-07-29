@@ -7,8 +7,8 @@ The actual source repository of LIMIX can be found here: https://github.com/PMBi
 
 ## Where to start
 This repository hosts package vignettes for LIMIX.
-The main package vignette can also be viewed using the ipython notebook viewer:
-http://nbviewer.ipython.org/github/pmbio/limix-tutorials/blob/master/tutorial_yeast.ipynb or by downloading the PDF equivalent: https://github.com/PMBio/limix-tutorials/blob/master/tutorial_yeast.pdf?raw=true.
+There is an overview of tutorials available for LIMIX here:
+[link](README.ipynb)
 
 ## Problems ?
 If you want to use LIMIX and encounter any issues, please contact us by email: limix@mixed-models.org
