@@ -1,3 +1,7 @@
+"""standard setup.py used by all tutorials
+   This loads commonly used LIMIX functions
+"""
+
 import scipy as sp
 import pylab as pl
 from matplotlib import cm
