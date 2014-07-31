@@ -1,6 +1,10 @@
 """standard setup.py used by all tutorials
    This loads commonly used LIMIX functions
 """
+import sys
+sys.path.append('./..')
+import data as tutorial_data
+
 
 import scipy as sp
 import pylab as pl
