@@ -23,6 +23,9 @@ studies['BYxRM'] = {}
 studies['BYxRM']['url'] =  url_base + 'BYxRM/BYxRM.hdf5'
 studies['BYxRM']['path'] =  'BYxRM/BYxRM.hdf5'
 
+studies['smith08'] = {}
+studies['smith08']['url'] =  url_base + 'smith_2008/smith08.hdf5'
+studies['smith08']['path'] =  'smith_2008/smith08.hdf5'
 
 def get_file(study_name):
     """return hdf5 file and download from the web if needed"""
