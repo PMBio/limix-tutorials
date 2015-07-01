@@ -24,7 +24,6 @@ import limix.io.data_util as data_util
 import limix.utils.preprocess as preprocess
 # plotting and visualization utilties
 from limix.utils.plot import *
-# genotype summary stats
 from limix.stats.geno_summary import *
 import os
 import cPickle
