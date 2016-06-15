@@ -1,19 +1,29 @@
 import os
+
+from os.path import join
+from os.path import exists
+from os.path import dirname
+from os.path import abspath
+
 import urllib
 
+_root = dirname(abspath(__file__))
+
 def download_file(indir, fname, url):
-    full_name = os.path.join(indir, fname)
-    if not os.path.exists(full_name):
-        if not os.path.exists(indir):   os.makedirs(indir)
-        _url = os.path.join(url, fname)
+    full_name = join(indir, fname)
+    if not exists(full_name):
+
+        if not exists(indir):
+            os.makedirs(indir)
+
+        _url = join(url, fname)
         testfile = urllib.URLopener()
+
+        print("Downloading file %s to %s" % (_url, full_name))
         testfile.retrieve(_url, full_name)
-        print 'File %s does not exist. The file has been downloaded' % full_name
-    else:
-        print 'File %s exsits' % full_name
 
 def get_1000G_mtSet():
-    indir = './../data/1000g'
+    indir = join(_root, 'data', '1000g')
     bname = 'chrom22_subsample20_maf0.10'
     pname = 'pheno.phe'
     cname = 'chrom22.cov'
@@ -27,4 +37,3 @@ def get_1000G_mtSet():
 
 if __name__=='__main__':
     get_1000G_mtSet()
-
