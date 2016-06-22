@@ -24,7 +24,7 @@ def download_file(indir, fname, url):
         _url = join(url, fname)
         print("Downloading file %s to %s" % (_url, full_name))
         u = urlopen(_url)
-        with open(full_name, 'w') as f:
+        with open(full_name, 'wb') as f:
             f.write(u.read())
 
 def get_1000G_mtSet():
