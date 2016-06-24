@@ -32,10 +32,12 @@ def get_1000G_mtSet():
     bname = 'chrom22_subsample20_maf0.10'
     pname = 'pheno.phe'
     cname = 'chrom22.cov'
+    iname = 'indicator.csv'
     url_base = 'http://www.ebi.ac.uk/~casale/mtSet_demo'
     download_file(indir, bname+'.bed', url_base)
     download_file(indir, bname+'.bim', url_base)
     download_file(indir, bname+'.fam', url_base)
+    download_file(indir, iname, url_base)
     download_file(indir, pname, url_base)
     download_file(indir, cname, url_base)
 
