@@ -1,12 +1,18 @@
-# Interaction set test
+# Interaction set test (iSet)
 
 Set tests are a powerful approach for association testing between groups of genetic variants and quantitative traits.
-In this tutorial we demonstrate how to use set tests within the LIMIX framework to test for gene-context interactions (iSet).
+In this tutorial we showcase the usage of iSet, efficient set tests for gene-context interactions.
+iSet is part of the mixed-model software suite LIMIX (https://github.com/PMBio/limix).
+
 As we show in this tutorial, iSet can be applied for interaction analysis in two data designs:
 * complete design, where all individuals have been phenotyped in each context
 * stratified design, where each individual has been phenotyped in only one of the two contexts
 
-As shown in this tutorial, iSet can be used both with the command line interface using the limix scripts (`mtSet_preprocess`, `iSet_analyze`, `iSet_postprocess`, `mtSet_simPheno`) or within python.
+Below we showcase the usage of iSet using a command line interface (using the limix scripts `mtSet_preprocess`, `iSet_analyze`, `iSet_postprocess`, `mtSet_simPheno`).
+
+iSet can be also used in Python as we describe in this [iPython notebook](https://github.com/PMBio/limix-tutorials/blob/master/iSet/Interaction_set_test.ipynb).
+
+By Francesco Paolo Casale (casale@ebi.ac.uk), Danilo Horta (horta@ebi.ac.uk) and Oliver Stegle (stegle@ebi.ac.uk)
 
 ## Quick Start
 
