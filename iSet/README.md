@@ -38,20 +38,20 @@ mtSet_preprocess --precompute_windows --bfile $BFILE --wfile $WFILE --window_siz
 
 * Perform set tests from window 0 to window 9 for either complete or stratified designs (see below for further information). This command can be used to run iSet on multiple cores, each analysing a set of windows (for example, 0-9, 10-19, 20-29, etc).
     - Complete design
-```bash
-PFILE=data/pheno_compl #phenotype matrix (N samples x 2)
-FFILE=data/covs #covariates (N samples x N covariates)
-RESDIR=results #output folder
-iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10
-```
+    ```bash
+    PFILE=data/pheno_compl #phenotype matrix (N samples x 2)
+    FFILE=data/covs #covariates (N samples x N covariates)
+    RESDIR=results #output folder
+    iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10
+    ```
     - Stratified design
-```bash
-PFILE=data/pheno_strat #phenotype vector (N samples x 1)
-FFILE=data/covs #covariates (N samples x N covariates)
-IFILE=data/indicator #environment indicator vector (0/1, N samples x 1)
-RESDIR=results #output folder
-iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10 --ifile $IFILE
-```
+    ```bash
+    PFILE=data/pheno_strat #phenotype vector (N samples x 1)
+    FFILE=data/covs #covariates (N samples x N covariates)
+    IFILE=data/indicator #environment indicator vector (0/1, N samples x 1)
+    RESDIR=results #output folder
+    iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10 --ifile $IFILE
+    ```
 
 * Merges all results present in RESDIR, calculate P values and exports to OUTFILE
 ```bash
