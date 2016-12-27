@@ -8,7 +8,7 @@ As we show in this tutorial, iSet can be applied for interaction analysis in two
 * complete design, where all individuals have been phenotyped in each context
 * stratified design, where each individual has been phenotyped in only one of the two contexts
 
-Below we showcase the usage of iSet using a command line interface (using the limix scripts `mtSet_preprocess`, `iSet_analyze`, `iSet_postprocess`, `mtSet_simPheno`).
+Below we showcase the usage of iSet using a command line interface (using the limix scripts `mtSet_preprocess`, `iSet_analyze` and `iSet_postprocess`).
 
 iSet can be also used in Python as we describe in this [iPython notebook](https://github.com/PMBio/limix-tutorials/blob/master/iSet/Interaction_set_test.ipynb).
 
