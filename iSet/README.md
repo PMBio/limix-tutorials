@@ -1,3 +1,5 @@
+# Interaction set test
+
 Set tests are a powerful approach for association testing between groups of genetic variants and quantitative traits.
 In this tutorial we demonstrate how to use set tests within the LIMIX framework to test for gene-context interactions (iSet).
 As we show in this tutorial, iSet can be applied for interaction analysis in two data designs:
