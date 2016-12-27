@@ -3,8 +3,8 @@
 Set tests are a powerful approach for association testing between groups of genetic variants and quantitative traits.
 In this tutorial we demonstrate how to use set tests within the LIMIX framework to test for gene-context interactions (iSet).
 As we show in this tutorial, iSet can be applied for interaction analysis in two data designs:
-* [complete design](#Complete-design), where all individuals have been phenotyped in each context
-* [stratified design](#Stratified-design), where each individual has been phenotyped in only one of the two contexts
+* complete design, where all individuals have been phenotyped in each context
+* stratified design, where each individual has been phenotyped in only one of the two contexts
 
 As shown in this tutorial, iSet can be used both with the command line interface using the limix scripts (`mtSet_preprocess`, `iSet_analyze`, `iSet_postprocess`, `mtSet_simPheno`) or within python.
 
@@ -38,7 +38,6 @@ FFILE=data/covs #covariates (N samples x N covariates)
 RESDIR=results #output folder
 iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10
 ```
-
     - Stratified design
 ```bash
 PFILE=data/pheno_strat #phenotype vector (N samples x 1)
