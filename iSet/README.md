@@ -16,21 +16,18 @@ git clone --depth 1 https://github.com/PMBio/limix.git
 pushd limix
 python setup.py install
 ```
-
 2. Download sample data from http://www.ebi.ac.uk/~casale/data.zip and unzip them
 ```bash
 wget http://www.ebi.ac.uk/~casale/data.zip
 unzip data.zip
 ```
-
 3. Define sets to consider in the analysis and export to file WFILE (see below for further information)
 ```bash
 BFILE=data/chrom22_subsample20_maf0.10 #bed file basename
 WFILE=data/windows #file with the sets to analyse
 mtSet_preprocess --precompute_windows --bfile $BFILE --wfile $WFILE --window_size 30000 --plot_windows
 ```
-
-5. Perform set tests from window 0 to window 9 for either complete or stratified designs (see below for further information). This command can be used to run iSet on multiple cores, each analysing a set of windows (for example, 0-9, 10-19, 20-29, etc).
+4. Perform set tests from window 0 to window 9 for either complete or stratified designs (see below for further information). This command can be used to run iSet on multiple cores, each analysing a set of windows (for example, 0-9, 10-19, 20-29, etc).
     - Complete design
 ```bash
 PFILE=data/pheno_compl #phenotype matrix (N samples x 2)
@@ -46,8 +43,7 @@ IFILE=data/indicator #environment indicator vector (0/1, N samples x 1)
 RESDIR=results #output folder
 iSet_analyze --bfile $BFILE --ffile $FFILE --pfile $PFILE --wfile $WFILE --minSnps 4 --resdir $RESDIR --start_wnd 0 --end_wnd 10 --ifile $IFILE
 ```
-
-6. Merges all results present in RESDIR, calculate P values and exports to OUTFILE
+5. Merges all results present in RESDIR, calculate P values and exports to OUTFILE
 ```bash
 OUTFILE=final
 iSet_postprocess --resdir $RESDIR --outfile $OUTFILE
