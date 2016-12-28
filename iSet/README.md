@@ -58,7 +58,7 @@ iSet_postprocess --resdir $RESDIR --outfile $OUTFILE
 ## Precomputing the windows
 In order to apply iSet, the user is required to provide a file (wfile) that contains the variant-sets to consider in the analysis. The file needs to have the following format:
 * the rows correspond to the different variant sets,
-* the columns indicate: index, chromosome, start position, stop position, index of startposition (in the bed file) and number of SNPs (6 columns).
+* the columns indicate: index, chromosome, start position, end position, index of startposition (in the bed file) and number of SNPs (6 columns).
 
 While the user can specify the sets to consider arbitrarily, we here provide a method that produce the set file for sliding-window experiments:
 
